@@ -1,0 +1,38 @@
+
+$medium: 768px;
+$small: 440px;
+$large: 1020px;
+$footer-border: #444;
+$footer-menu:#92a1a6;
+$footer-disclaimer:#505050;
+$colorBrand: #ffb302; // Gold
+$colorAccent: #ff9d01;
+@mixin nav {
+	background: linear-gradient(#333, #000);
+}
+@mixin footer {
+	background: linear-gradient(#222, #111);
+}
+
+@mixin media($media) {
+	@if $media == maxsmall {
+		@media only screen and (max-width:$small) { @content; }
+	}
+	@else if $media == maxmedium {
+		@media only screen and (max-width:$medium) { @content; }
+	}
+	@else if $media == maxlarge{
+		@media only screen and (max-width:$large) { @content; }
+	}
+	@elseif $media == minsmall {
+		@media only screen and (min-width:$small) { @content; }
+	}
+	@else if $media == minmedium {
+		@media only screen and (min-width:$medium) { @content; }
+	}
+	@else if $media == minlarge{
+		@media only screen and (min-width:$large) { @content; }
+	}
+
+}
+ // Darker gold
