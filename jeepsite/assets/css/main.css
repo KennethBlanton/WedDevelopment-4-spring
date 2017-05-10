@@ -130,4 +130,110 @@ footer.footer {
       flex-direction: column;
       align-items: center; } }
 
+.main {
+  padding-top: 60px;
+  width: 100%;
+  height: 715px;
+  background-color: black; }
+
+.vehicles-hero {
+  position: absolute;
+  background-image: url(../img/wrangler/wrangler-main.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  width: 100%;
+  height: 100%; }
+
+.hero-wrapper {
+  position: relative;
+  margin: 0 120px;
+  padding-top: 30px; }
+  .hero-wrapper h1 {
+    font-family: "montserrat";
+    color: white;
+    text-shadow: 0 2px 1px black;
+    font-size: 2.3em;
+    max-width: 375px; }
+  .hero-wrapper h3 {
+    font-family: "montserrat";
+    color: white;
+    text-shadow: 0 2px 1px black;
+    padding: 30px 0; }
+  .hero-wrapper .hero-info {
+    max-width: 280px;
+    background-color: rgba(0, 0, 0, 0.5); }
+    .hero-wrapper .hero-info p {
+      color: white;
+      font-family: "montserrat";
+      font-size: .8em;
+      padding: 15px 10px;
+      line-height: 1.5; }
+  .hero-wrapper .financial {
+    width: 100%;
+    height: 230px;
+    margin-top: 120px;
+    background-color: white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px; }
+  .hero-wrapper .financial-top {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    padding-bottom: 0; }
+    .hero-wrapper .financial-top .promo {
+      background-image: url(../img/wrangler/promo-header.png);
+      width: 270px;
+      height: 80px; }
+    .hero-wrapper .financial-top h3 {
+      font-family: "montserrat";
+      color: black;
+      text-shadow: none;
+      padding: 0; }
+    .hero-wrapper .financial-top h1 {
+      color: black;
+      text-shadow: none;
+      font-weight: 100;
+      padding: 5px 0; }
+    .hero-wrapper .financial-top p {
+      font-size: .8em; }
+    .hero-wrapper .financial-top .lease {
+      display: flex;
+      flex-direction: column; }
+    .hero-wrapper .financial-top .lease-text {
+      display: flex;
+      flex-direction: row; }
+    .hero-wrapper .financial-top .lease-text2 {
+      display: flex;
+      flex-direction: column;
+      padding-top: 13px;
+      padding-left: 5px; }
+  .hero-wrapper .financial-bot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 110px;
+    background-image: url(../img/wrangler/awards-background.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: 15px; }
+    .hero-wrapper .financial-bot .award-icon {
+      background-image: url(../img/wrangler/award-icon.png);
+      background-size: 100% 100%;
+      height: 80px;
+      width: 70px;
+      margin-right: 50px; }
+    .hero-wrapper .financial-bot h2 {
+      font-size: 1.2em;
+      color: black;
+      text-shadow: none;
+      padding: 0; }
+    .hero-wrapper .financial-bot p {
+      font-size: .9em; }
+    .hero-wrapper .financial-bot .award-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+
 /*# sourceMappingURL=main.css.map */
