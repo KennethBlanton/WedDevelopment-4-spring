@@ -1,0 +1,70 @@
+
+@import 'bootstrap-variables.sass';
+@import '../vendor/bootstrap/stylesheets/bootstrap.scss';
+@import 'gallery';
+@import 'info';
+@font-face {
+	font-family: 'lobster';
+	src: url(../img/phase1/www/fonts/Lobster/Lobster.ttf);
+}
+
+@font-face {
+	font-family: 'holtwood one sc';
+	src: url(../img/phase1/www/fonts/Holtwood_One_SC/HoltwoodOneSC.ttf);
+}
+*{
+	box-sizing:border-box;
+}
+body {
+	background-image:url(../img/phase1/www/img/bg-dark.jpg);
+}
+.move{
+		background: #130900;
+		border-top:1px solid #5e3c2f;
+		border-bottom:1px solid #3c271e;
+	img {
+		height:360px;
+		margin:0 auto;
+
+	}
+}
+p {
+	font-family:$font-family-serif;
+	font-size:10px;
+}
+.menu {
+	p {
+		color:$description-color;
+		font-family:$font-family-serif;
+		font-size:10px;
+	}
+}
+h1 {
+	text-align:center;
+}
+.footer {
+	background: $gray-base;
+	.row{
+		padding:20px;
+	}
+}
+.img {
+	padding-top:50px;
+	padding-bottom:30px;
+	padding-left: 10px;
+	img{
+		width:100%;
+		max-width:400px;
+		border: 5px solid rgba(255,255,255, 0.6);
+	}
+
+}
+// .img-1 {
+// 	background-image:url(../img/phase1/www/img/special-beans.jpg);
+// 	height:200px;
+// 	backgr
+// }
+// .img-2 {
+// 	background-image:url(../img/phase1/www/img/special-shirts.jpg);
+// 	height:200px;
+// }
