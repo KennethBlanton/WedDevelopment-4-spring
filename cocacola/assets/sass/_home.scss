@@ -1,0 +1,106 @@
+.home {
+	.hero {
+		@include hero;
+		height:0;
+		padding:24%;
+		background-image: url("http://mms.businesswire.com/media/20160119005305/en/504776/5/carma_11_withtagline.jpg");
+	}
+	.earn {
+		background-image:linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0.01) 1%,rgba(0,0,0,0.89) 72%,rgba(0,0,0,0.89) 100%),  url("https://us.coca-cola.com/content/dam/coke2016/cokevending/vending-hero.jpg");
+		color:white;
+		padding-right:0;
+		background-size:cover;
+		.earn-text {
+			text-align:center;
+			padding:100px 0;
+			h1 {
+				font-weight: 200;
+				padding-right:10px;
+			}
+			h5 {
+				margin-top:20px;
+				font-weight:100;
+				line-height:1.5;
+			}
+		}
+	}
+	.donate {
+		margin-top:30px;
+		background-image:url('https://us.coca-cola.com/content/dam/coke2016/CokeConnected/Coke_Give_Offers_Tile-Revised.jpg/jcr:content/renditions/cq5dam.thumbnail.694.342.png');
+		color:white;
+		padding-right:0;
+		background-size:cover;
+		background-position:50%;
+		.donate-text { 
+			margin-top: -10px;
+			h1 {
+				font-weight: 200;
+			}
+			h5 {
+				margin-top:20px;
+				font-weight:100;
+				line-height:1.5;
+			}
+			text-align:center;
+			padding:100px 0;
+		}
+	}
+	.earn,.donate {
+		.button-container {
+			margin-top:30px;
+		}
+	}
+	.catch-phrases {
+		padding:30px 0;
+		text-align:center;
+		.thin {
+			font-weight:300;
+		}
+		h1 {
+			padding: 20px 0 0 0;
+		}
+	}
+
+	.gallery-home {
+		text-align:center;
+		.row {
+			margin:0;
+			margin: 30px 0;
+		}
+		.gallery-item {
+			height:200px;
+			background-size:cover;
+			background-position: top left;
+		}
+		.gallery-one {
+			background-image: url('http://cbsnews1.cbsistatic.com/hub/i/r/2011/11/14/29b33f76-8ba3-11e2-9400-029118418759/thumbnail/1200x630/bfdcc24117b8965374cf2d146c2721d7/womandrinkingcoke_iStock_00.jpg');
+			background-position: 60%;
+		}	
+		.gallery-two {
+			background-image: url('http://www.thoughtpursuits.com/wp-content/uploads/2014/05/Drink_lrg6.jpg');
+			background-position: 100%;
+		}
+		.gallery-three {
+			background-image: url('http://www.coca-colacompany.com/content/dam/journey/us/en/private/2013/05/coming-together-604-604-337-afad95f8.jpg');
+			background-position: 100%;
+		}
+		.gallery-four {
+			background-image: url('https://s-media-cache-ak0.pinimg.com/originals/3a/03/68/3a03683345d62f9e9fcc64284e74bd9e.jpg');
+		}
+		.gallery-five {
+			background-image: url('https://peterblacksbooks.files.wordpress.com/2013/11/man-drinking-coke-008.jpg');
+		}
+		.gallery-six {
+			background-image: url('https://i.ytimg.com/vi/QRcqrz2LB30/hqdefault.jpg');
+		}
+		.gallery-seven {
+			background-image: url('http://961theeagle.com/files/2013/02/Diet-Coke-630x419.jpg');
+			background-position:90%;
+		}
+		.gallery-eight {
+			background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOk02m7q-R_TOx7a6V9t2fWHXdSZEpRYRei0oKqwzLBRlceEx-1w');
+			background-position:65%;
+		}
+
+	}
+}

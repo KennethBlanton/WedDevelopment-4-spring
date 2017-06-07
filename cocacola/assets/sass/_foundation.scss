@@ -1,0 +1,51 @@
+
+.foundation {
+	.hero {
+		font-weight: 600;
+		font-family: cursive;
+		color:$brand-primary;
+		text-align:center;
+		letter-spacing:8px;
+	}
+	.facts {
+		text-align:center;
+	}
+	.priorities {
+		text-align:center;
+		color:$gray;
+		.women, .water, .well-being {
+			a {
+				color:white;
+			}
+			.button-container {
+				padding-top:20px;
+				padding-bottom:30px;
+			}
+			.button {
+				background:$brand-primary;
+			}
+			h5 {
+				width:70%;
+				margin: 0 auto;
+			}
+			img {
+				width:70%;
+				border-radius:50%;
+			}
+		}
+	}
+	.clicky {
+		background-image:url('https://pbs.twimg.com/media/C_S_eDtW0AEGZuy.jpg');
+		background-size:cover;
+		background-position: top center;
+		margin:0;
+		.clicky-text {
+			text-align:center;
+			padding: 10% 0;
+			color:white;
+			h5 {
+				line-height:1.5;
+			}
+		}
+	}
+}

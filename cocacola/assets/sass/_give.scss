@@ -1,0 +1,68 @@
+.give {
+	.hero{
+		@include hero;
+		background-image: url('http://www.coca-colacompany.com/content/dam/journey/us/en/private/2014/07/11-coke-videos-lead-1701-950-ff75cac9.png');
+		color: white;
+		text-align: center;
+		h1 {
+		    padding-top: 10%;
+		    padding-bottom:2%;
+		    font-weight: 500;
+		    font-size: 60px;
+		}
+		h4 {
+			font-weight:200;
+			padding-bottom:10%;
+		}
+	}
+	.blocks {
+		margin-top: 15px;
+	}
+	.poll {
+		margin-top:30px;
+		text-align:center;
+	}
+	.connect-give {
+		padding:0;
+		color:white;
+		.item-container {
+			padding:0;
+		}
+		.item {
+			padding:0;
+			margin-top: 10px;
+			background:#f73949;
+		}
+		.darker {
+			background: rgba(0,0,0,.15);
+			padding: 10px 0;
+		}
+		.icon {
+			padding:0;
+			padding-left:10px;
+			padding-right:10px;
+		}
+		img  {
+			width:25px;
+			height:25px;
+		}
+
+	}
+	.uso {
+		margin-top:30px;
+		background-image:linear-gradient(to right, rgba(0,0,0,0.45) 0%,rgba(0,0,0,0.45) 100%), url('https://us.coca-cola.com/content/dam/coke2016/give/uso-mdw/uso-mobile-no-bottles.png');
+		background-size:cover;
+		color:white;
+		.uso-text {
+			padding: 50px 0;
+			a {
+				border-radius: 30px;
+				padding: 10px 30px;
+				color:white;
+				background-color:$brand-primary;
+			}
+		}
+	}
+
+	
+}
