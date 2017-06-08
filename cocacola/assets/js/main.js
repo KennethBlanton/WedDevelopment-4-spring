@@ -1,3 +1,4 @@
-	$('.carousel').carousel({
-		interval: 3000
-	})
+var $svg = $('svg').drawsvg();
+console.log($svg);
+
+$svg.drawsvg('animate');
