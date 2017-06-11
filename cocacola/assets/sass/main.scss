@@ -43,8 +43,8 @@ a:hover {
 	}
 	z-index:10;
 	padding: 5px 0;
-	display:flex;
-	align-items: center;
+	// display:flex;
+	// align-items: center;
 	background-color:white;
 	margin:0;
 	color:$gray;
@@ -53,9 +53,58 @@ a:hover {
 		display:flex;
 		justify-content:space-around;
 		align-items:center;
+		transition:.8s all;
+		transition-delay: .15s;
+		@media (max-width: 500px) {
+			display:unset;
+			overflow: hidden;
+    		height: 72px;
+
+		}
+	}
+	.nav-options.active  {
+		height:200px;
 	}
 	.img {
 		width:20%;
+		@media (max-width: 500px) {
+			visibility:visible;
+			width:50%;
+			margin-left:-40px;
+			transition:.3s all;
+		}
+	}
+	.logo {
+		transition:.8s all;
+	}
+	.logo.clicked {
+			position: absolute;
+    		left: 127%;
+    		transform: translate(-154%);
+	}
+	.cola,.donate-link,.foundation {
+		transition: .8s all;
+		@media (max-width: 500px) {
+			position:absolute;
+			left:98%;
+			transform:translate(-50%);
+			width:100%;
+			opacity:0;
+		}
+		&.active {
+			opacity:1;
+			margin-top:90px;
+		}
+		
+	}
+	.cola.active {
+		margin-top: 90px;
+	}
+	.donate-link.active {
+		margin-top: 120px;
+	}
+	.foundation.active {
+		margin-top: 150px;
 	}
 }
 

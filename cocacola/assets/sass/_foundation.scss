@@ -1,13 +1,14 @@
 @mixin blackLine {
 	content:'';
 	display:inline-block;
-	width:100%; height:100%;
+	width:98%; height:100%;
 	margin-right:-100%;
 	border-bottom:1px solid #000
 }
 
 
 .foundation {
+	font-family: 'Varela Round', sans-serif;
 	color:$gray;
 	.hero {
 		margin:0;
@@ -32,10 +33,17 @@
 		text-align:center;
 		color:$gray;
 		margin-bottom:50px;
+		padding: 30px 0;
 	}
 	.first {
+
 		img {
 			max-width: 80px;
+			position:relative;
+			left:50%;
+			transform: translate(-50%);
+			padding-bottom: 30px;
+			padding-top:20px;
 		}
 		.img-container {
 			padding:0 5px;
@@ -43,16 +51,31 @@
 		&:after {
 			@include blackLine;
 		}
+		h3,h4 {
+			margin-top:0;
+			padding-bottom:30px;
+		}
 		h3 {
 			color:$brand-primary;
-			font-weight:6s00;
+			font-weight:600;
 			margin-bottom:20px;
 		}
+		h4 {
+			@media (max-width: 992px) {border-bottom: 1px solid black;}
+		}
+		h5 {
+			text-align:center;
+			font-size:18px;
+		}
 		font-weight:500;
+
 	}
 	.second {
 		margin-top:30px;
 		.first-half{
+			@media (max-width: 992px) { border-right:none;border-bottom:1px solid black;margin-left:0; text-align:center; }
+			padding-top:3%;
+			padding-bottom:3%;
 			padding-right:0px;
 			border-right: 1px solid black;
 			margin-right:10px;
@@ -61,10 +84,17 @@
 				font-size:7rem;
 				color:$brand-primary;
 				font-weight:600;
+				@media (max-width: 992px) { margin-top:180px;}
 			}
 			h3 {
 				font-size:3rem;
 				font-weight:600;
+			}
+			img {
+				max-width:200px;
+				position: absolute;
+    			left: 50%;
+    			transform: translate(-50%);
 			}
 		}
 		.second-half {
@@ -84,6 +114,7 @@
 		// }
 	}
 	.third {
+		@media (max-width: 992px) {text-align:center;}
 		&:before {
 			@include blackLine;
 			margin-right:0;
@@ -91,6 +122,7 @@
 		}
 		img {
 			margin-top:10px;
+			padding-top:5%;
 		}
 		span {
 			font-weight:600;
